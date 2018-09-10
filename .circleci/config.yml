@@ -4,7 +4,7 @@ workflows:
   version: 2
   regular_workflow:
     jobs:
-      - small:
+      - small
 
 jobs:
   small:

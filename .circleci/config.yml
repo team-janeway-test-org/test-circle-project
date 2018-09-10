@@ -1,0 +1,15 @@
+version: 2
+debug: true
+workflows:
+  version: 2
+  regular_workflow:
+    jobs:
+      - small:
+
+jobs:
+  small:
+    docker:
+      - image: circleci/ruby:2.4.1
+    steps:
+      - run: echo $CIRCLE_JOB
+    resource_class: small
